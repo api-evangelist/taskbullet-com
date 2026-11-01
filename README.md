@@ -64,9 +64,9 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-TaskBullet provides managed virtual assistant services for US businesses, offering flexible hour and dedicated virtual assistant models since 2013. Their platform helps companies save time and reduce costs by handling administrative, operational, and personal tasks, with a focus on reliability and high customer satisfaction.
+Managed virtual assistant services for US businesses. Flexible Hour Model: dedicated VA continuity, specialist routing from the same hour bucket, US account management, 90-day rollover, and a 60-day unused-hour guarantee. No long-term contracts. TaskBullet provides on-demand virtual assistants to help businesses save time and increase productivity.
 
-**Areas:** Company · VirtualAssistant · SaaS · USBusiness · Productivity
+**Areas:** Company · VirtualAssistant · ManagedServices · USBusiness · FlexibleHours
 
 ## taskbullet-com on APIs.io
 
@@ -74,20 +74,24 @@ Everything profiled for taskbullet-com is published on APIs.io rather than in th
 
 ### APIs (2)
 
-- [TaskBullet Agent API](https://apis.io/apis/taskbullet-com/taskbullet-agent-api/) — Delegate tasks from AI agents and LLMs to real human virtual assistants (Human-in-the-loop).
-- [TaskBullet Agent API API](https://apis.io/apis/taskbullet-com/taskbullet-agent-api-api/) — Delegate tasks from AI agents and LLMs to real human virtual assistants (Human-in-the-loop).
+- [taskbullet-com Balance API](https://apis.io/apis/taskbullet-com/taskbullet-com-balance-api/) — The Balance API from taskbullet-com — 1 operation(s) for balance.
+- [taskbullet-com Delegate API](https://apis.io/apis/taskbullet-com/taskbullet-com-delegate-api/) — The Delegate API from taskbullet-com — 1 operation(s) for delegate.
 
 ### Published properties
 
 Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-#### JSON Schema (3)
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Taskbullet Com Agentic Access](https://apis.io/agentic-access/taskbullet-com/taskbullet-com-agentic-access/)
+
+#### JSON Schema (1)
 
 The data models the API reads and writes.
 
-- [ActionRequest](https://apis.io/schemas/taskbullet-com/taskbullet-com-action-request/)
 - [TaskPriority](https://apis.io/schemas/taskbullet-com/taskbullet-com-task-priority/)
-- [TaskStatus](https://apis.io/schemas/taskbullet-com/taskbullet-com-task-status/)
 
 #### JSON-LD (1)
 
@@ -101,52 +105,71 @@ Spectral rulesets for the provider's contracts.
 
 - [taskbullet-com API Rules](https://apis.io/rules/taskbullet-com/taskbullet-com-rules/)
 
-#### Security (1)
+#### Security (2)
 
 Authentication, trust centre, and vulnerability disclosure.
 
+- [Taskbullet Com Authentication](https://apis.io/security/taskbullet-com/taskbullet-com-authentication/)
 - [Taskbullet Com Domain Security](https://apis.io/security/taskbullet-com/taskbullet-com-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Taskbullet Com Scopes](https://apis.io/scopes/taskbullet-com/taskbullet-com-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Taskbullet Com Plans Pricing](https://apis.io/plans/taskbullet-com/taskbullet-com-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Taskbullet Com Rate Limits](https://apis.io/rate-limits/taskbullet-com/taskbullet-com-rate-limits/)
 
 ## Where to find this API
 
 Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://taskbullet.com/)
-- [Documentation](https://taskbullet.com/about)
+- [Documentation](https://taskbullet.com/docs/mcp)
 - [Getting started](https://taskbullet.com/integrations/basecamp/getting-started)
-- [Pricing](https://taskbullet.com/pricing)
+- [Pricing](https://taskbullet.com/integrations/basecamp/pricing)
 - [Blog](https://taskbullet.com/blog)
 - [Terms of service](https://taskbullet.com/legal/terms)
 - [Privacy policy](https://taskbullet.com/legal/privacy)
 
 ## API Evangelist rating
 
-**Kin Score 43.1** — developing · rubric 0.25.0 · scored 2026-10-30
+**Kin Score 58.8** — strong · rubric 0.25.0 · scored 2026-10-30
 
 | Facet | Score |
 |---|---|
 | Discoverability | 65.0 |
-| Contract quality | 51.4 |
+| Contract quality | 57.5 |
 | Contract governance | 79.1 |
-| Operational transparency | 0.0 |
-| Developer ergonomics | 23.8 |
-| Access clarity | 44.7 |
+| Operational transparency | 18.9 |
+| Developer ergonomics | 42.1 |
+| Access clarity | 73.2 |
 
-**Agent readiness 27.3** — agent-aware
+**Agent readiness 38.0** — agent-ready
 
 | Agent-readiness dimension | Result |
 |---|---|
 | Spec Presence | yes |
-| Agentic Access | — |
+| Agentic Access | unknown |
 | Reversibility Documented | — |
 | MCP Server | documented (partial credit) |
 | Auth Clarity | bearer (partial credit) |
 | Idempotency | verified |
 | Error Semantics | derived (partial credit) |
 | OpenAPI Examples | — |
-| Rate Limit Signal | — |
+| Rate Limit Signal | documented (partial credit) |
 | Event Surface Described | — |
-| Agent Skills | — |
+| Agent Skills | unknown |
 | Well Known Catalog | — |
 | Consent Identity | — |
 | Agent Card | — |
@@ -156,9 +179,9 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
 | Pagination Ratio | na |
-| Operation Distinctiveness | distinct |
+| Operation Distinctiveness | na |
 
-**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 34.3** — Horizontal (data, software, accessibility, platform)
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/taskbullet-com/](https://apis.io/providers/taskbullet-com/).
 
